@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Develop By 十五霏 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+    <title>一只小果子</title>
+</head>
+
+<body>
+    <div id="main">
+        <!-- 导航栏 -->
+        <div class="nav-1">
+            <div class="nav-1-body"><img src="images/nav-title.svg" alt=""></div>
+            <ul class="nav-2">
+                <!-- <li>主页</li>
+            <li>公告</li> -->
+                <li><a href="#ipsw">系统固件</a></li>
+                <li><a href="#app">应用获取</a></li>
+                <li><a href="#sponsor">赞助</a></li>
+                <li><a href="#message">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="glob">
+            <!-- image-top -->
+            <div class="image-top">
+                <img src="images/image-top.svg" alt="">
+                <div class="image-top-text">
+                    晓看天色暮看云 行也思君 坐也思君<br />
+                    春观百花冬观雪 醒亦念卿 梦亦念卿
+                </div>
+            </div>
+
+            <!-- 公告 -->
+            <div class="cards">
+                <div class="card-1">
+                    <img src="images/公告.svg" alt="">
+                    <div class="card-title">公告</div>
+                </div>
+                <div class="announcenment-text">{{gg}}</div>
+            </div>
+
+            <!-- 系统固件-->
+            <div class="cards" id="ipsw">
+                <div class="card-1">
+                    <img src="images/系统固件.svg" alt="">
+                    <div class="card-title">系统固件</div>
+                </div>
+                <div class="card-button">
+                    <div class="button-s">
+
+                        <div class="button-text">
+                            <a href="https://ipsw.me/#platform">
+                                IOS<br />
+                                正式版/测试版
+                            </a>
+                        </div>
+                        <div class="button-text">
+                            <a href="https://ipsw.me/#platform">
+                                iPadOs<br />
+                                测试版
+                            </a>
+                        </div>
+                        <div class="button-text">
+                            <a href="">
+                                MacOs<br />
+                                正式版/测试版
+                            </a>
+                        </div>
+                    </div>
+                    <div class="button-s">
+                        <div class="button-text">
+                            <a href="https://ipsw.me/#platform">
+                                WatchOs<br />
+                                正式版/测试版
+                            </a>
+                        </div>
+                        <div class="button-text">
+                            <a href="https://ipsw.me/#platform">
+                                iTvOS<br />
+                                正式版/测试版
+                            </a>
+                        </div>
+                        <div class="button-text">
+                            <a href="https://ipsw.me/#platform">
+                                iPodOs<br />
+                                测试版
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 应用获取 -->
+            <div class="cards" id="app">
+                <div class="card-1">
+                    <img src="images/应用获取.svg" alt="">
+                    <div class="card-title">应用获取</div>
+                </div>
+                <div class="Card-APPGet">
+                    <div class="AG-1">
+                        <div class="AG-1-1"><a href="http://ipastore.cc/list/Jailbreaktool/index.html">越狱工具</a></div>
+                        <div class="AG-1-1"><a href="http://ipastore.cc/list/Applicationcrack/index.html">应用破解</a></div>
+                        <div class="AG-1-1"><a href="http://ipastore.cc/list/Applicationmoreopen/index.html">应用多开</a>
+                        </div>
+                    </div>
+                    <div class="AG-2">
+                        <div class="AG-1-1"><a href="http://ipastore.cc/list/Freeapp/index.html">免费应用</a></div>
+                        <div class="AG-1-1"><a href="http://ipastore.cc/list/UDIDarea/index.html">UDID专区</a></div>
+                        <div class="AG-1-1"><a href="http://ipastore.cc/list/Olddriverarea/index.html">老司机专区</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 赞助 -->
+            <div class="cards" id="sponsor">
+                <div class="card-1">
+                    <img src="images/赞助.svg" alt="">
+                    <div class="card-title">赞助</div>
+                </div>
+                <div class="GetMoney">
+                    此网站为出于兴趣所做</br>
+                    所有费用支持来自于赞助</br>
+                    如果你喜欢</br>
+                    请考虑
+                </div>
+                <div class="money">
+                    <a href="other/money/index.html"> 赞助我们</a>
+                </div>
+            </div>
+
+            <!-- 联系我们 -->
+            <div class="cards" id="message">
+                <div class="card-1">
+                    <img src="images/联系我们.svg" alt="">
+                    <div class="card-title">联系我们</div>
+                </div>
+                <div class="message">
+                    <div class="qq" onclick="window.open('other/contact/qq.html','_self')">
+                        <img src="images/qq.svg" alt="">
+                        <div class="message-text">QQ</div>
+                    </div>
+                    <div class="wechat" onclick="window.open('other/contact/wechat.html','_self')">
+                        <img src="images/wechat.svg" alt="">
+                        <div class="message-text">WeChat</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 页尾 -->
+            <div class="end">
+                <div>©️一只小果子 2016-2019</div>
+                <div>Develop By Minfee</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+
+</html>
+
+<script src="main.js"></script>
