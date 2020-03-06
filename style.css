@@ -1,0 +1,230 @@
+/* Develop By 十五霏 */
+body{
+    background-color: #F2F2F2;
+    margin: 0px;
+    
+}
+
+a:link {color: black}
+a:visited {color: black}
+a:hover {color: gray}
+a:active {color: gray}
+a{
+    text-decoration:none;
+    text-decoration-color: gray;
+}
+
+.glob{
+    max-width: 768px;
+    margin: auto;
+}
+
+/* 导航栏 */
+.nav-img-1 img{
+    min-width: 100%;
+}
+
+.nav-1{
+    background: #FFFFFF;
+    height: 55px;
+    display: flex;
+    justify-content:space-between;
+    /* 阴影 */
+    box-shadow: #C9CBCA 0px 0px 5px 1px;
+}
+
+.nav-1-body{
+    display: inline;
+    margin-left: 5%;
+    align-self: center;
+}
+
+
+.nav-1-body img{
+    align-self: center;
+    height: 30px;
+}
+
+.nav-2{
+    display: flex;
+    list-style-type: none;
+    font-size: 14px;
+    font-family: PingFangSC-Light;
+    float: right;
+    padding-left: 0px;
+    margin-right: 4%;
+    margin-top: 18px;
+}
+
+.nav-2 li{
+    margin-left: 8px;
+}
+
+/* image-top */
+.image-top{
+    margin-top: 16px;
+    text-align: center;
+}
+
+.image-top img{
+    width: 35%;
+}
+
+.image-top-text{
+    margin-top: 14px;
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #151515;
+    text-align: center;
+    line-height: 30px;
+}
+/* cards */
+.cards{
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 16px;
+    width: 85%;
+    margin-top: 23px;
+}
+
+.card-1{
+    display: flex;
+}
+
+.cards img{
+    margin-left: 15px;
+    margin-top: 14px;
+    width:35px;
+}
+
+.card-title{
+    margin-top: 23px;
+    margin-left: 8px;
+    font-size: 15px;
+}
+
+.card-button{
+    margin-top: 18px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 14px;
+}
+
+.button-s{
+    display: flex;
+    margin-top: 7%;
+}
+
+.button-text{
+    border-radius: 8px;
+    box-shadow: #C9CBCA 0px 0px  5px 0px;
+    font-size:8px;
+    width: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    margin: auto;
+    font-family: PingFangSC-Light;
+}
+
+.end{
+    color: #151515;
+    text-align: center;
+    margin-top: 32px;
+    font-size: 8px;
+    margin-bottom: 12px;
+}
+
+/* announcenment */
+.announcenment-text{
+    margin-top: 8px;
+    text-align: center;
+    font-size: 8px;
+    font-family: PingFangSC-Light;
+    padding-bottom: 20px;
+}
+
+/* Appget */
+.Card-APPGet{
+
+}
+
+.AG-1{
+    display: flex;
+    margin-top: 18px;
+    margin-left: 18px;
+    margin-right: 18px;
+    padding-bottom: 14px;
+}
+
+.AG-2{
+    display: flex;
+    margin-bottom: 18px;
+    margin-left: 18px;
+    margin-right: 18px;
+    padding-bottom: 14px;
+}
+
+.AG-1-1{
+    font-size:8px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: #C9CBCA 0px 0px 5px 0px;
+    width: 30%;
+    text-align: center;
+    font-family: PingFangSC-Light;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+/* getmoney */
+.GetMoney{
+    text-align: center;
+    font-size: 8px;
+    font-family: PingFangSC-Light;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.money{
+    text-align: center;
+    font-size: 10px;
+    font-family: PingFangSC-Light;
+    box-shadow: #C9CBCA 0px 0px 5px 0px;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+    height: 20px;
+    padding-top: 3px;
+    bottom: 15px;
+    position: relative;
+}
+
+/* message */
+.message{
+    display: flex;
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.qq{
+    margin: auto;
+}
+
+.wechat{
+    margin: auto;
+}
+
+.qq img{
+    margin: 0px;
+}
+
+.wechat img{
+    margin: 0px;
+}
+
+.message-text{
+    font-size: 10px;
+    font-family: PingFangSC-Light;
+}
